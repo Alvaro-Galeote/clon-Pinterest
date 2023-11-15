@@ -1,0 +1,209 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,Hiragino Kaku Gothic Pro,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+#navbar-pinterest{
+    display: flex;
+    font-size: 16px;
+    padding: 10px 0px 0px 8px;
+    width: 100%;
+    height: 54px;
+    font-weight:bold;
+    align-content:space-evenly;
+
+    background-color: #FFFFFF;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#navbar-pinterest div{
+    display: flex;
+    height: 87.5%;
+    align-items: center;
+    justify-content:center;
+}
+
+#icono{
+    width: 48px;
+}
+
+#pinterest-icon{
+    width: 100%;
+    height: 24px;
+}
+
+#inicio{
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    width: 71px;
+    cursor: pointer;
+    
+}
+
+#explorar{
+    width: 59px;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+#crear{
+    width: 58px;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+.finder{
+    background-color: rgb(225, 225, 225);
+    border-radius: 70px;
+    padding:0px 8px;
+    width: 825px;
+    height: 50px;
+}
+
+.finder img{
+    align-self: center;
+    width: 23px;
+    height: 23px;
+    padding-left: 8px;
+}
+
+.finder input{
+    font-size: 14px;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    padding: 1px 0px 0px 8px;
+    width: 790px;
+}
+.finder input:focus{
+    outline: none;
+}
+
+#notificaciones{
+    padding: 0px 24px;
+    cursor: pointer;
+}
+
+#usuario{
+    padding: 0px 24px;
+    cursor: pointer;
+}
+
+#usuario img{
+    border-radius: 2em;
+    width: 40px;
+    height: 40px;
+}
+
+#mensajes img{
+    width: 22px;
+    height: 24px;
+}
+
+#notificaciones img, #usuario img{
+    width: 24px;
+    height: 24px;
+}
+
+
+#content{
+    /* outline: 2px solid yellow; */
+    columns: 5 120px;
+    grid-row: 6;
+    position: relative;
+    padding-top: 5%;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(5,18%);*/
+    
+    /*grid-template-rows: repeat(6,15%);*/
+    grid-gap: 1%;
+    justify-content:center;
+}
+
+.card-image{
+    /* border: 2px solid red; ctrl + k +c para comentar lineas*/
+    justify-content: center;
+    align-items: center;
+    padding: 0  0 20px 0;
+    position: relative;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7%;
+    
+    /*object-fit: cover;*/
+}
+
+.card-image:hover{
+    cursor: zoom-in;
+    .guardar{
+        display: flex;
+    }
+
+    transform: scale(1.05);
+}
+
+.guardar{
+    width: 30%;
+    padding: 5% 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #E60023;
+    border: none;
+    border-radius: 12rem;
+    transition: 1s all;
+    cursor: pointer;
+    justify-content: center;
+    display: none;
+
+    position: absolute;
+    top: 1%;
+    left: 65%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar-pinterest{
+        padding: 5px 0px 0px 4px;
+    }
+
+    #inicio{
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    width: 71px;
+    cursor: pointer;
+    }
+
+    .finder{
+        width: 48px;
+        padding: 0;
+        background-color: white;
+    }
+
+    .finder img{
+        align-self: center;
+        width: 23px;
+        height: 23px;
+        padding-left: 4px;
+    }
+
+    .finder input{
+        display: none;
+    }
+
+    #notificaciones{
+        padding: 0px 12px;
+        cursor: pointer;
+    }
+    
+    #usuario{
+        padding: 0px 12px;
+        cursor: pointer;
+    }
+}
